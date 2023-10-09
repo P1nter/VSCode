@@ -27,7 +27,7 @@ public class Application {
 
         } catch(InterruptedException exc)
         {
-            exc.getStackTrace();
+            exc.getStackTrace(); 
         }
     }
 }

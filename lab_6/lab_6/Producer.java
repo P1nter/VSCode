@@ -1,7 +1,5 @@
 package lab_6;
 
-
-
 public class Producer extends Thread{
 
     private String str;
@@ -25,8 +23,7 @@ public class Producer extends Thread{
         {
             try
             {
-                synchronized (fi)
-                {
+                
 
                     String strToAdd = str + " " + i;
 
@@ -36,7 +33,7 @@ public class Producer extends Thread{
                         strToAdd  + " added " + System.currentTimeMillis()
                     );
 
-                }
+            
                 Thread.sleep(sleepTime);
                 i++;
             } catch(InterruptedException intexc)

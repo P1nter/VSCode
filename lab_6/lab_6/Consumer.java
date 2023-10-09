@@ -20,14 +20,13 @@ public class Consumer extends Thread {
         {
             try
             {
-                synchronized (fi)
-                {
+                
                     String deleted = new String(fi.get());
                     System.out.println
                     (
                         deleted + " deleted " + System.currentTimeMillis()
                     );
-                }
+                
                 Thread.sleep(sleepTime);
             } catch(InterruptedException exc)
             {
